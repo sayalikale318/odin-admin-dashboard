@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* MAIN GRID LAYOUT */
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 100px 1fr;
+    height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    grid-row: 1 / 3;
+    background-color: #1e40af;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+/* HEADER */
+.header {
+    background: #f3f4f6;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 15px;
+    gap: 10px;
+}
+
+.search-bar input {
+    width: 90%;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+}
+
+.user-info {
+    text-align: right;
+}
+
+.buttons {
+    grid-column: 1 / 3;
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 8px 15px;
+    border: none;
+    background: #1e40af;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* MAIN CONTENT */
+.main {
+    background: #e5e7eb;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* PROJECT SECTION */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-left: 5px solid orange;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* SIDE SECTION */
+.side-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.small-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
